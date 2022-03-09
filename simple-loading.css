@@ -1,0 +1,42 @@
+/** @format */
+
+body {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	min-height: 100vh;
+}
+
+.loading {
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.4;
+	max-width: 50%;
+	text-align: center;
+}
+
+.loading__author {
+	color: rgba(189, 189, 189, 1);
+	display: block;
+	font-size: 0.9rem;
+	font-weight: normal;
+	margin: 0.6rem 0 2rem 0;
+}
+
+.loading__anim {
+	animation: rotate 600ms infinite linear;
+	border: 5px solid rgba(189, 189, 189, 0.25);
+	border-left-color: rgba(3, 155, 229, 1);
+	border-top-color: rgba(3, 155, 229, 1);
+	border-radius: 50%;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(1turn);
+	}
+}
